@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = [
     "djoser",
     "rest_framework_simplejwt",
     "drf_yasg",
+    "django_enum",
 ]
 LOCAL_APPS = ["user", "link", "collection"]
 INSTALLED_APPS = [

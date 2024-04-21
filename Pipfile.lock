@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "37ed04f4e3e49b0213beb2c3677ab6026d286c75f341188dbeb0db9e47abaaaf"
+            "sha256": "eab6f06b9ac5ec8b699bae601248c799dc9db328a3a1be584dcdba39cbc9f08b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -279,6 +279,15 @@
             "markers": "python_version >= '3.10'",
             "version": "==5.0.4"
         },
+        "django-enum": {
+            "hashes": [
+                "sha256:6be9c278e5d6bf273401ab49e2aa46f5e72b537db53ba68dc26bd25cd3c75efc",
+                "sha256:8013199f7334dd29e5a3b9ce9b65e92a89b4f1cb3c06b3bac59edb1b2edc1788"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
+            "version": "==1.3.1"
+        },
         "django-templated-mail": {
             "hashes": [
                 "sha256:8db807effebb42a532622e2d142dfd453dafcd0d7794c4c3332acb90656315f9",
@@ -321,6 +330,15 @@
             "index": "pypi",
             "markers": "python_version >= '3.6'",
             "version": "==1.21.7"
+        },
+        "enum-properties": {
+            "hashes": [
+                "sha256:776010db64bfd080f506b24d5c878fc158a346e4a59e31015c2a4dd7b5658bb0",
+                "sha256:b4d6e3261e56a2bff5b43f0abb2e34757443382ac06b11757d37da1c50f138f7"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7' and python_version < '4.0'",
+            "version": "==1.7.0"
         },
         "idna": {
             "hashes": [
