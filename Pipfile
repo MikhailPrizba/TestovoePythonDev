@@ -7,6 +7,11 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 psycopg2-binary = "*"
+djoser = "*"
+drf-yasg = "*"
+black = "*"
+djangorestframework-simplejwt = "*"
+setuptools = "*"
 
 [dev-packages]
 

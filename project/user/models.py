@@ -14,7 +14,7 @@ class UserManager(BaseUserManager):
         Creates and saves a User with the given email and password.
         """
         if not email:
-            raise ValueError('The given email must be set')
+            raise ValueError("The given email must be set")
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
@@ -37,9 +37,10 @@ class UserManager(BaseUserManager):
 
         return self._create_user(email, password, **extra_fields)
 
-class User(AbstractBaseUser,PermissionsMixin):
-    email = models.EmailField(_('email address'), unique=True)
-    is_active = models.BooleanField(_('active'), default=True)
+
+class User(AbstractBaseUser, PermissionsMixin):
+    email = models.EmailField(_("email address"), unique=True)
+    is_active = models.BooleanField(_("active"), default=True)
     is_staff = models.BooleanField(
         _("staff status"),
         default=False,
@@ -48,14 +49,15 @@ class User(AbstractBaseUser,PermissionsMixin):
 
     objects = UserManager()
 
-    USERNAME_FIELD = 'email'
+    USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
+
     class Meta:
-        verbose_name = _('user')
-        verbose_name_plural = _('users')
-    
+        verbose_name = _("user")
+        verbose_name_plural = _("users")
+
     def email_user(self, subject, message, from_email=None, **kwargs):
-        '''
+        """
         Sends an email to this User.
-        '''
+        """
         send_mail(subject, message, from_email, [self.email], **kwargs)
