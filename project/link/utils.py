@@ -1,17 +1,13 @@
 import requests
-from django.core.validators import URLValidator
-from django.core.exceptions import ValidationError
 from bs4 import BeautifulSoup
+import os
 
 
 def get_link_data_from_url(url):
-    try:
-        URLValidator()(url)
-    except ValidationError:
-        return None
+
 
     headers = {
-        "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:124.0) Gecko/20100101 Firefox/124.0"
+        "user-agent": os.environ.get("USER_AGENT")
     }
 
     try:
