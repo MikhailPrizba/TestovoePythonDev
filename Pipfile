@@ -12,6 +12,10 @@ drf-yasg = "*"
 black = "*"
 djangorestframework-simplejwt = "*"
 setuptools = "*"
+django-enum = "*"
+enum-properties = "*"
+opengraph = "*"
+lxml = "*"
 
 [dev-packages]
 
