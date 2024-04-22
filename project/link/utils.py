@@ -30,8 +30,24 @@ def get_link_data_from_url(url):
         "title": title_tag["content"] if title_tag else "",
         "description": description_tag["content"] if description_tag else "",
         "image_url": image_tag["content"] if image_tag else "",
-        "type": type_tag["content"] if type_tag else "",
+        "link_type": type_tag["content"] if type_tag else "",
     }
+    if link_data["link_type"]:
+        if link_data["link_type"] in [
+            "video.movie",
+            "video.episode",
+            "video.tv_show",
+            "video.other",
+            "video.tv_show",
+        ]:
+            link_data["link_type"] = "video"
+        if link_data["link_type"] in [
+            "music.song",
+            "music.album",
+            "music.playlist",
+            "music.radio_station",
+        ]:
+            link_data["link_type"] = "music"
     if not link_data["title"]:
         link_data["title"] = soup.find("title").text
     if not link_data["description"]:
