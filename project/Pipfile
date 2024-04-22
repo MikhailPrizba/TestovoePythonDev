@@ -16,6 +16,7 @@ django-enum = "*"
 enum-properties = "*"
 opengraph = "*"
 lxml = "*"
+gunicorn = "*"
 
 [dev-packages]
 
