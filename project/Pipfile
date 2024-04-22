@@ -17,6 +17,7 @@ enum-properties = "*"
 opengraph = "*"
 lxml = "*"
 gunicorn = "*"
+faker = "*"
 
 [dev-packages]
 

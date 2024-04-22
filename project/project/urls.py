@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from rest_framework import permissions
+from rest_framework import permissions, authentication
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -41,7 +41,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/v1/collection/", include("collection.urls")),
     path("api/v1/link/", include("link.urls")),
-    path("api-auth/", include("rest_framework.urls")),
+    path("api/v1/api-auth/", include("rest_framework.urls")),
     re_path(r"^api/v1/auth/", include("djoser.urls")),
     re_path(r"^api/v1/auth/", include("djoser.urls.jwt")),
     path(

@@ -26,6 +26,15 @@ class CollectionSerializer(serializers.ModelSerializer):
         validated_data["user"] = request.user
         return super().create(validated_data)
 
+    def validate_name(self, value):
+
+        user = self.context["request"].user
+        if Collection.objects.filter(user=user, name=value).exists():
+            raise serializers.ValidationError(
+                "A Collection with this name already exists"
+            )
+        return value
+
 
 class LinkIdSerializer(serializers.Serializer):
     link_id = serializers.IntegerField(required=True)

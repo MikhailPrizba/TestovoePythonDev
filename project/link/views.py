@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 from .models import Link
 from .serializers import LinkSerializer, LinkUrlSerializer
 from .utils import get_link_data_from_url
@@ -12,7 +12,7 @@ from .filters import OwnerFilter
 class LinkViewSet(viewsets.ModelViewSet):
     queryset = Link.objects.all()
     serializer_class = LinkSerializer
-    permission_classes = [IsOwner]
+    permission_classes = [permissions.IsAuthenticated, IsOwner]
     filter_backends = [OwnerFilter]
 
     # Create your views here.
