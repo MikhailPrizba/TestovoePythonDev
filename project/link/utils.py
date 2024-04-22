@@ -5,10 +5,7 @@ import os
 
 def get_link_data_from_url(url):
 
-
-    headers = {
-        "user-agent": os.environ.get("USER_AGENT")
-    }
+    headers = {"user-agent": os.environ.get("USER_AGENT")}
 
     try:
         response = requests.get(url, headers=headers)

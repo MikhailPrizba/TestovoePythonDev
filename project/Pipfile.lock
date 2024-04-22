@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "41b014ff0a4cc5ef4c3aaa3c3598754099b66104d9aa41a181611faf9398b4c9"
+            "sha256": "9caa7a0f576f493d849030bd6c23b50431d1f1042ef9bba1fffc731bb396a093"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -348,6 +348,15 @@
             "markers": "python_version >= '3.7' and python_version < '4.0'",
             "version": "==1.7.0"
         },
+        "faker": {
+            "hashes": [
+                "sha256:34b947581c2bced340c39b35f89dbfac4f356932cfff8fe893bde854903f0e6e",
+                "sha256:adb98e771073a06bdc5d2d6710d8af07ac5da64c8dc2ae3b17bb32319e66fd82"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.8'",
+            "version": "==24.11.0"
+        },
         "gunicorn": {
             "hashes": [
                 "sha256:350679f91b24062c86e386e198a15438d53a7a8207235a78ba1b53df4c4378d9",
@@ -677,6 +686,14 @@
             "markers": "python_version >= '3.7'",
             "version": "==2.8.0"
         },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3",
+                "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==2.9.0.post0"
+        },
         "python3-openid": {
             "hashes": [
                 "sha256:33fbf6928f401e0b790151ed2b5290b02545e8775f982485205a066f874aaeaf",
@@ -772,6 +789,14 @@
             "index": "pypi",
             "markers": "python_version >= '3.8'",
             "version": "==69.5.1"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
+                "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==1.16.0"
         },
         "social-auth-app-django": {
             "hashes": [
