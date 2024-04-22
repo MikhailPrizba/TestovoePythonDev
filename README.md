@@ -59,4 +59,5 @@ ORDER BY
     count_links DESC, u.id ASC
 LIMIT 
     10;
+```
 Тестовые данные были сгенерированы с использованием faker
