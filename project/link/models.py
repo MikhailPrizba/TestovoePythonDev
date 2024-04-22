@@ -1,6 +1,7 @@
 from django.db import models
 from user.models import User
 from django_enum import TextChoices
+from collection.models import Collection
 
 
 class Link(models.Model):
@@ -19,6 +20,7 @@ class Link(models.Model):
     link_type = models.TextField(
         choices=LinkTypesChoices.choices, default=LinkTypesChoices.WEBSITE
     )
+    collections = models.ManyToManyField(Collection, related_name="links", blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
