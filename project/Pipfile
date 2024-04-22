@@ -18,6 +18,7 @@ opengraph = "*"
 lxml = "*"
 gunicorn = "*"
 faker = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
