@@ -27,6 +27,7 @@ POSTGRES_PORT = ""
 POSTGRES_ENGINE = ''
 ALLOWED_HOSTS = ''
 USER_AGENT = ""
+CORS_ALLOWED_ORIGINS = ''
 
 Затем выполните команду `docker-compose up -d`.
 
